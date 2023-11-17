@@ -8,7 +8,7 @@ def node(i):
             executable='ping',
             name=f'ping_pi{i}', 
             parameters=[
-                {"ping_rate_hz": 1.0}
+                {"ping_rate_hz": 100.0}
                 ]
             )
 

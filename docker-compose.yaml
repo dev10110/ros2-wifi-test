@@ -8,5 +8,7 @@ services:
     network_mode: "host"
     volumes:
       - ./colcon_ws:/root/colcon_ws
+      - ./discovery_config.xml:/root/discovery_config.xml
     environment:
       - ROS_DOMAIN_ID=3
+      - FASTRTPS_DEFAULT_PROFILES_FILE=/root/discovery_config.xml
