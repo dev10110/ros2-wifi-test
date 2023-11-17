@@ -8,3 +8,5 @@ services:
     network_mode: "host"
     volumes:
       - ./colcon_ws:/root/colcon_ws
+    environment:
+      - ROS_DOMAIN_ID=3
