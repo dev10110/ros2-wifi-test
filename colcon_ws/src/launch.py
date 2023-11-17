@@ -8,8 +8,11 @@ def node(i):
             executable='ping',
             name=f'ping_pi{i}', 
             parameters=[
-                {"ping_rate_hz": 100.0}
-                ]
+                {"ping_rate_hz": 200.0}
+                ], 
+            arguments=[
+              "--ros-args",
+              "--disable-stdout-logs"]
             )
 
 def generate_launch_description():
