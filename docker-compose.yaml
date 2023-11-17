@@ -1,0 +1,10 @@
+version: "3"
+
+services:
+  ros2:
+    build: .
+    tty: true
+    privileged: true
+    network_mode: "host"
+    volumes:
+      - ./colcon_ws:/root/colcon_ws
